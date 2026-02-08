@@ -1,12 +1,15 @@
 {
-  "name": "anthelpers",
-  "version": "0.0.3",
-  "description": "my javascript helpers",
+  "name": "fetched-worker",
+  "version": "0.0.0",
+  "description": "",
   "license": "MIT",
   "author": "",
   "type": "module",
-  "main": "index.js",
+  "main": "src/FetchedWorker.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
   }
 }

@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a78d91b0-5feb-4b64-b252-3dd33f0ea9ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FWorker.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebWorkers/CustomError.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomError.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebWorkers/CustomError.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomError.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebWorkers/FWClass.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/FWClass.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebWorkers/FWClass.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/FWClass.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebWorkers/FetchedWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/FetchedWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebWorkers/FetchedWorker.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/FetchedWorker.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebWorkers/FetchedWorkerWithin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/FetchedWorkerWithin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebWorkers/FetchedWorkerWithin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/FetchedWorkerWithin.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebWorkers/PromisedWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PromisedWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebWorkers/PromisedWorker.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/PromisedWorker.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebWorkers/PromisedWorkerInside.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PromisedWorkerInside.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebWorkers/PromisedWorkerInside.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/PromisedWorkerInside.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,10 +29,30 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.3">
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;DNSCond&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/DNSCond/FWorker&quot;,
+    &quot;accountId&quot;: &quot;ec761e4b-ed8e-4d2f-adac-b0456563d030&quot;
+  }
+}</component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.4">
     <include_path>
       <path value="$PROJECT_DIR$/../dollmaker1" />
       <path value="$PROJECT_DIR$/../accounts" />
@@ -29,30 +61,47 @@
       <path value="$PROJECT_DIR$/../modulesphp" />
     </include_path>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="340ujwK1xVURO48a1qgXTN9EGGt" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/var/www/BOTs/FWorker",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/var/www/BOTs/FWorker&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\var\\www\\BOTs\\FWorker\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\var\www\BOTs\FWorker" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.30387.90" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -63,20 +112,12 @@
       <option name="presentableId" value="Default" />
       <updated>1760362950182</updated>
       <workItem from="1760362951335" duration="24000" />
+      <workItem from="1770038483093" duration="2841000" />
+      <workItem from="1770066464588" duration="7000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/WebWorkers/FWClass.js" />
-        <option value="$PROJECT_DIR$/WebWorkers/CustomError.js" />
-        <option value="$PROJECT_DIR$/WebWorkers/FetchedWorker.js" />
-        <option value="$PROJECT_DIR$/WebWorkers/PromisedWorker.js" />
-        <option value="$PROJECT_DIR$/WebWorkers/FetchedWorkerWithin.js" />
-        <option value="$PROJECT_DIR$/WebWorkers/PromisedWorkerInside.js" />
-      </list>
-    </option>
   </component>
 </project>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset=UTF-8>
+    <title>Testing FWorker</title>
+    <style>
+        html {
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+<script type=module>
+    import {FetchedWorker} from "./../src/FetchedWorker.js";
+
+    const fetchedWorker = new FetchedWorker(new Worker('./test.js', {type: 'module'}));
+
+    const result = await fetchedWorker.fetch('test');
+    console.log(result);
+
+</script>
+</body>
+</html>

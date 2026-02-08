@@ -13,7 +13,7 @@ export class PromisedWorker {
             enumerable: true,
             configurable: false,
         });
-        if (!window.isSecureContext) throw new TypeError('PromisedWorker relies on secure context only things (crypto.randomUUID)');
+        if (!window.isSecureContext) throw TypeError('PromisedWorker relies on secure context only things (crypto.randomUUID)');
         webWorker.addEventListener("message", event => this.eventListener(event))
         this.jobs = new Map;
     }
@@ -50,7 +50,7 @@ export class PromisedWorker {
             } else if (event.data?.message instanceof Error) {
                 reject(event.data?.message);
             } else {
-                reject(new TypeError('an Error has occurred'));
+                reject(TypeError('an Error has occurred'));
             }
         }
         return this;

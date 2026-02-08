@@ -7,8 +7,9 @@ export class FetchedWorker {
         if (webWorker instanceof Worker) {
             webWorker = new PromisedWorker(webWorker);
         }
-        else if (!(webWorker instanceof PromisedWorker))
-            throw new TypeError('worker must be a PromisedWorker');
+        else if (!(webWorker instanceof PromisedWorker)) {
+            throw TypeError('worker must be a PromisedWorker');
+        }
         this.worker = webWorker;
         Object.defineProperty(this, 'worker', {
             value: webWorker,

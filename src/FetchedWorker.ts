@@ -1,15 +1,16 @@
 // FetchedWorker
 import {PromisedWorker} from './PromisedWorker.js';
-import {FWRequest, FWHeaders, RequestClass} from "./FWClass.js";
+import {FWRequest, FWHeaders, RequestClass, FWResponse} from "./FWClass.js";
 
 export class FetchedWorker {
     private readonly worker: PromisedWorker;
 
-    constructor(webWorker: PromisedWorker | Worker | unknown) {
+    constructor(webWorker: PromisedWorker | Worker) {
         if (webWorker instanceof Worker) {
             webWorker = new PromisedWorker(webWorker);
-        } else if (!(webWorker instanceof PromisedWorker)) throw new TypeError('worker must be a PromisedWorker');
-
+        } else if (!((webWorker as unknown) instanceof PromisedWorker)) {
+            throw TypeError('worker must be a PromisedWorker');
+        }
         this.worker = webWorker as PromisedWorker;
         Object.defineProperty(this, 'worker', {
             value: webWorker,

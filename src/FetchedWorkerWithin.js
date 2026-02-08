@@ -1,5 +1,6 @@
 // FetchedWorkerWithin.ts
-import { PromisedWorkerInside, callWith } from "./PromisedWorkerInside.js";
+import { callWith, PromisedWorkerInside } from "./PromisedWorkerInside.js";
+import { toStringTag } from "./CustomError.js";
 export class FetchedWorkerWithin extends PromisedWorkerInside {
     //private expressHandlers = [];
     callback;
@@ -59,7 +60,7 @@ export class FetchedWorkerWithin extends PromisedWorkerInside {
                         status: 200,
                         headers: {
                             'Date': date.toUTCString(),
-                            'Content-type': response.type,
+                            'Content-type': response.type || 'application/octet-stream',
                             'Last-Modified': date.toUTCString(),
                         },
                     });
@@ -75,7 +76,7 @@ export class FetchedWorkerWithin extends PromisedWorkerInside {
                     });
                 }
                 else if (helpers.isTypedArray(response)) {
-                    // @ts-ignore
+                    // @ts-expect-error
                     return new Response(response, {
                         status: 200,
                         headers: {
@@ -111,15 +112,15 @@ export class FetchedWorkerWithin extends PromisedWorkerInside {
             });
         });
     }
+    /**
+     * @deprecated
+     */
     setMessageEventListener() {
-        throw new TypeError('use setCallback');
+        throw TypeError('use setCallback');
     }
     _match(response) {
-        throw new TypeError;
+        throw TypeError('_match called');
     }
-}
-function toStringTag(mixed) {
-    return Object.prototype.toString.call(mixed);
 }
 export const helpers = {
     isTypedArray(object) {

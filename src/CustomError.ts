@@ -12,3 +12,7 @@ export class CustomError<T = unknown> extends Error {
         return this.name;
     }
 }
+
+export function toStringTag(mixed: any): string {
+    return Object.prototype.toString.call(mixed).slice(8, -1);
+}
